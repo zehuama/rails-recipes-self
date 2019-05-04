@@ -3,12 +3,22 @@ Rails.application.routes.draw do
   devise_for :users
 
   resources :events
+  resource :user
 
   namespace :admin do
     root "events#index"
-    resources :events
+    resources :events do
+      resources :tickets, :controller => "event_tickets"
+    end
+    resources :users do
+      resource :profile, :controller => "user_profiles"
+    end
   end
 
   root "events#index"
+
+  get "/faq" => "pages#faq"
+
+  Time::DATE_FORMATS.merge!(:default => '%Y/%m/%d %I:%M %p', :ymd => '%Y/%m/%d')
 
 end

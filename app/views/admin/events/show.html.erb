@@ -1,5 +1,5 @@
 <h1><%= @event.name %></h1>
-
+<h2><%= t(@event.status, :scope => "event.status") %></h2>
 <p>
   <%= link_to "打開前台", event_path(@event), :target => "_blank", :class => "btn btn-primary" %>
 </p>
