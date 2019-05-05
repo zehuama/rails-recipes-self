@@ -44,6 +44,8 @@ gem "rails-i18n"
 gem "devise-i18n"
 gem "select2-rails"
 gem "nested_form_fields"
+gem "bootstrap-datepicker-rails"
+gem 'ckeditor', '4.1.3'
 
 group :development, :test do
   gem 'rspec-rails'
