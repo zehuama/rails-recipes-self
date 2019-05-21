@@ -48,6 +48,10 @@ gem "bootstrap-datepicker-rails"
 gem 'ckeditor', '4.1.3'
 gem 'ranked-model'
 gem 'jquery-ui-rails'
+gem 'kaminari'
+gem 'ransack'
+gem 'carrierwave'
+gem 'mini_magick'
 
 group :development, :test do
   gem 'rspec-rails'
