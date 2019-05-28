@@ -17,6 +17,7 @@
     status:
       pending: 报名尚未成功
       confirmed: 报名成功
+      cancalled: 报名已取消
 
   user:
     role:
